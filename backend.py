@@ -27,9 +27,9 @@ class BackendDeveloper(object):
         if self.score > 7:
             print ("Make a pull request with this code, we want you!")
         else:
-            print ("Wait, you have created successfully the score method? Then make a pull request, we want you anyway!")
+            print ("Wait, you have created successfully the score method? Then make a pull request, we want you!")
 
 if __name__ == "__main__":
-     """
+    """
         Write the code to create yourself, a BackendDeveloper, and let us know you are ready!
-     """
+    """
