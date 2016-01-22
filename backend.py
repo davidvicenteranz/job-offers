@@ -29,7 +29,8 @@ class BackendDeveloper(object):
                 Output should be 10 or more for perfect matches
                 Output should be 0 for candidates that do not fulfill any requirements
         """
-        return len([req for req in self.knowledges if req in self.key_requirements or req in self.other_requirements])
+        return len([req for req in list(set(self.knowledges)) if req in 
+            self.key_requirements or req in self.other_requirements])
 
     def i_am_ready(self):
         if self.score > 7:
@@ -47,6 +48,7 @@ if __name__ == "__main__":
         'Vicente Ranz',
         ['python',
          'django',
+         'django', # just to test duplicates
          'motivation',
          'software',
          'djangorestframework',
